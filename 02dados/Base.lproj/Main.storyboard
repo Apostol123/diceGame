@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_2dados" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Xo8-UV-orm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="casino" translatesAutoresizingMaskIntoConstraints="NO" id="fFI-tK-qX1">
+                                <rect key="frame" x="-102" y="84" width="618" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fFI-tK-qX1" secondAttribute="height" multiplier="43:16" id="dp8-cU-lcE"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="p1q-P2-m7x">
+                                <rect key="frame" x="8" y="331.5" width="398" height="233"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="Z1L-jV-Jng">
+                                        <rect key="frame" x="0.0" y="0.0" width="177.5" height="233"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="Lpr-O0-yRy">
+                                        <rect key="frame" x="227.5" y="0.0" width="170.5" height="233"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkE-eW-M2R">
+                                <rect key="frame" x="93.5" y="644.5" width="227" height="53"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                <size key="titleShadowOffset" width="1" height="-1"/>
+                                <state key="normal" title="Tirar los dados">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vhC-lu-fle"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fFI-tK-qX1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2In-vK-Pkl"/>
+                            <constraint firstItem="Xo8-UV-orm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3fI-m1-WyX"/>
+                            <constraint firstItem="rkE-eW-M2R" firstAttribute="top" secondItem="p1q-P2-m7x" secondAttribute="bottom" constant="80" id="5di-9L-JVu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xo8-UV-orm" secondAttribute="trailing" id="BLE-Xp-5hE"/>
+                            <constraint firstItem="rkE-eW-M2R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dpn-p7-56F"/>
+                            <constraint firstItem="fFI-tK-qX1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="JHB-Tv-xfI"/>
+                            <constraint firstItem="p1q-P2-m7x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TuT-pV-rTd"/>
+                            <constraint firstItem="p1q-P2-m7x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Wvk-ry-IEX"/>
+                            <constraint firstItem="Xo8-UV-orm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cfH-dn-LUt"/>
+                            <constraint firstAttribute="trailing" secondItem="p1q-P2-m7x" secondAttribute="trailing" constant="8" id="ncA-tl-mSh"/>
+                            <constraint firstItem="p1q-P2-m7x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o9Q-eR-iPm"/>
+                            <constraint firstAttribute="bottom" secondItem="Xo8-UV-orm" secondAttribute="bottom" id="rZj-Vv-fhg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewDiceLeft" destination="Z1L-jV-Jng" id="MEH-e9-dzl"/>
+                        <outlet property="imageViewDiceRight" destination="Lpr-O0-yRy" id="jAL-X6-dCg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="275" height="183"/>
+        <image name="casino" width="344" height="230"/>
+        <image name="dice1" width="205" height="233"/>
+    </resources>
+</document>
